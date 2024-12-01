@@ -74,10 +74,10 @@ const index = () => {
                 <div className="xl:w-3/4 lg:w-3/6 w-full mx-auto text-center ">
                   {/* <h1 className="text-5xl text-red-600">Hey ,</h1> */}
                   <h1 className=" text-3xl  lg:text-7xl mt-12 italic md:text-center font-bold">
-                    " Devanand Utkarsh "
+                  &ldquo; Devanand Utkarsh &rdquo;
                     <br />
                     <p className="text-xl text-center text-lime-300 text-center mt-9 lg:mt-12">
-                      "Transforming ideas into digital reality."
+                    &ldquo;Transforming ideas into digital reality.&rdquo;
                     </p>
                   </h1>
                   <p className="leading-relaxed text-lg text-center lg:text-xl mt-10 lg:mt-14">
@@ -266,7 +266,7 @@ const index = () => {
                   My Projects{" "}
                 </h1>
                 <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                  "Turning visions into reality, one project at a time."
+                &ldquo;Turning visions into reality, one project at a time.&ldquo;
                 </p>
               </div>
             </div>

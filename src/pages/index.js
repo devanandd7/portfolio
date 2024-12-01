@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 const index = () => {
+
+  const emailCopy = "devanandutkarsh23@gmail.com"
   // const [name, setName] = useState('');
+
   // const [query, setQuery] = useState('');
 
   // const handleSubmit = async (e) => {
@@ -103,7 +106,7 @@ const index = () => {
                           <img src="/linkedin.png" alt="" />
                         </a>
                       </div>
-                      <div onClick={()=> navigator.clipboard.writeText("&quot;devanandutkarsh23@gmail.com&quot;")} className="w-10 h-10 border rounded-full m-2 object-scale-down">
+                      <div onClick={()=> navigator.clipboard.writeText('devanandutkarsh23@gmail.com')} className="w-10 h-10 border rounded-full m-2 object-scale-down">
                        <a href=""> <img src="/mail.png" alt="" /></a>
                       </div>
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down overflow-hidden">
@@ -348,11 +351,11 @@ const index = () => {
                   textcon
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                  🚀 Excited to share my latest project! 🌐 I've built a Text
+                  🚀 Excited to share my latest project! 🌐 I&apos;ve built a Text
                   Manipulation Website using React and JavaScript. This platform
                   allows users to interact with words in various
                   ways—transforming, analyzing, and exploring text effortlessly.
-                  It's fully responsive and designed to provide an engaging user
+                  It&apos;s fully responsive and designed to provide an engaging user
                   experience. Check it out and let me know your thoughts! Your
                   feedback is always appreciated. 💻✨
                 </p>
@@ -387,12 +390,12 @@ const index = () => {
                   disamonsoon app
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                  🌤️ Excited to share my latest project! 🌐 I’ve developed a
+                  🌤️ Excited to share my latest project! 🌐 I &apos;ve developed a
                   weather website using JavaScript and React! Users can easily
                   check real-time temperature, humidity, and wind speed for any
                   location. This project reflects my passion for building
                   functional, user-friendly applications and enhancing everyday
-                  experiences with technology. Check it out, and I’d love to
+                  experiences with technology. Check it out, and I &apos; d love to
                   hear your feedback! 💻☀️
                 </p>
                 <a

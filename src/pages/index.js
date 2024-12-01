@@ -1,29 +1,8 @@
-import React, { useState } from "react";
+"use client"
+import React from "react";
 
 const index = () => {
 
-  const emailCopy = "devanandutkarsh23@gmail.com"
-  // const [name, setName] = useState('');
-
-  // const [query, setQuery] = useState('');
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   const res = await fetch('/api/email', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({ name, query }),
-  //   });
-
-  //   if (res.ok) {
-  //     alert('Your query has been submitted!');
-  //   } else {
-  //     alert('Error submitting your query');
-  //   }
-  // };
   return (
     <>
       <header className="text-lime-600 body-font">

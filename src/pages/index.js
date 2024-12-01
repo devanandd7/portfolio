@@ -103,7 +103,7 @@ const index = () => {
                           <img src="/linkedin.png" alt="" />
                         </a>
                       </div>
-                      <div onClick={()=> navigator.clipboard.writeText("devanandutkarsh23@gmail.com")} className="w-10 h-10 border rounded-full m-2 object-scale-down">
+                      <div onClick={()=> navigator.clipboard.writeText("&quot;devanandutkarsh23@gmail.com&quot;")} className="w-10 h-10 border rounded-full m-2 object-scale-down">
                        <a href=""> <img src="/mail.png" alt="" /></a>
                       </div>
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down overflow-hidden">

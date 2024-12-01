@@ -1,4 +1,4 @@
-"use client"
+
 import React from "react";
 
 const index = () => {
@@ -101,49 +101,7 @@ const index = () => {
       </section>
 
       <div className="flex flex-col">
-        {/* <div className="flex flex-row h-screen m-0 ">
-          <div className="basis-1/2 mt-6 ml-6 border">
-            <h1 className="text-5xl text-red-600">Hey ,</h1>
-            <h1 className="text-7xl mt-32 italic tracking-wide truncate font-bold">
-              " Devanand Utkarsh "
-              <br />
-              <p className="text-2xl text-center text-lime-300">
-                "Transforming ideas into digital reality."
-              </p>
-            </h1>
-            <h1 className="text-2xl text-center text-balance truncate line-clamp-4 mt-16">
-              Passionate about building seamless, user-friendly web
-              applications. Skilled in front-end and back-end technologies, I
-              transform ideas into functional, engaging digital experiences.
-              Always eager to learn and innovate!
-            </h1>
-
-            <div className="flex justify-center mt-10">
-              <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
-                <img src="/social.png" alt="" />
-              </div>
-              <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
-                <img src="/github (2).png" alt="" />
-              </div>
-              <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
-                <img src="/linkedin.png" alt="" />
-              </div>
-              <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
-                <img src="/mail.png" alt="" />
-              </div>
-              <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
-                <img src="/phone.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="basis-1/2  mt-6 ml-6 border ">
-            <img
-              className="image_dev mt-6 ml-10 rounded-full w-2/6 md:w-96 lg:w-2/6 border-8 border-lime-400 shadow-lg shadow-lime-100/70 shadow-2xl"
-              src="/dev_port.jpeg"
-              alt=""
-            />
-          </div>
-        </div> */}
+       
 
         <section className=" body-font">
           <div className="container px-5 py:12 lg:py-24 mx-auto">
@@ -155,7 +113,7 @@ const index = () => {
                 Bringing ideas to life through code and creativity. Skilled in
                 JavaScript, React, Next.js, and databases like MongoDB and SQL.
                 Beyond coding, I express my creativity through drawing and
-                cooking. ✨
+                cooking. 
               </p>
             </div>
             <div className="flex flex-wrap -m-4 text-center">
@@ -295,13 +253,13 @@ const index = () => {
                   newspro
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                  🚀 Excited to share my latest project! 🌐 I&quot;ve built a fully
+                  Excited to share my latest project!  I&quot;ve built a fully
                   responsive website using React, JavaScript, news api and
                   Bootstrap. Designed with a focus on seamless user experience
                   across all devices, this project reflects my passion for clean
                   code and modern web development. Check it out and let me know
                   your thoughts! Always eager to connect and learn from the
-                  community. 💻✨
+                  community. 
                 </p>
                 <a className="text-indigo-500 inline-flex items-center mt-3">
                   Offline
@@ -330,13 +288,13 @@ const index = () => {
                   textcon
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                  🚀 Excited to share my latest project! 🌐 I&apos;ve built a Text
+                   Excited to share my latest project!  I&apos;ve built a Text
                   Manipulation Website using React and JavaScript. This platform
                   allows users to interact with words in various
                   ways—transforming, analyzing, and exploring text effortlessly.
                   It&apos;s fully responsive and designed to provide an engaging user
                   experience. Check it out and let me know your thoughts! Your
-                  feedback is always appreciated. 💻✨
+                  feedback is always appreciated.
                 </p>
                 <a
                   className="text-indigo-500 inline-flex items-center mt-3 "
@@ -369,13 +327,13 @@ const index = () => {
                   disamonsoon app
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                  🌤️ Excited to share my latest project! 🌐 I &apos;ve developed a
+                   Excited to share my latest project!  I &apos;ve developed a
                   weather website using JavaScript and React! Users can easily
                   check real-time temperature, humidity, and wind speed for any
                   location. This project reflects my passion for building
                   functional, user-friendly applications and enhancing everyday
                   experiences with technology. Check it out, and I &apos; d love to
-                  hear your feedback! 💻☀️
+                  hear your feedback! 
                 </p>
                 <a
                   className="text-indigo-500 inline-flex items-center mt-3"
@@ -400,88 +358,7 @@ const index = () => {
         </section>
       </div>
 
-      {/* <section className="text-gray-600 body-font relative">
-      <div className="flex flex-col text-center w-full">
-              <h1 className="text-3xl lg:text-7xl title-font mb-1 text-white font-bold">
-                Contact
-              </h1>
-            </div>
-        <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-          <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <iframe
-              width="100%"
-              height="100%"
-              className="absolute inset-0"
-              frameborder="0"
-              title="map"
-              marginheight="0"
-              marginwidth="0"
-              
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109744.22709340513!2d76.68831206468506!3d30.732254422013508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1732997313414!5m2!1sen!2sin"
-              style={{
-                filter: 'grayscale(1) contrast(1.2) opacity(0.4)',
-              }}
-              
-            ></iframe>
-            
-          </div>
-          <form
-            id="Mail"
-            action="https://formspree.io/f/mdkopyoj"
-            method="POST"
-            className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
-          >
-            <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-              Gmail
-            </h2>
-            <p className="leading-relaxed mb-5 text-gray-600">
-              you can send me any message :)
-            </p>
-            <div className="relative mb-4">
-              <label for="name" className="leading-7 text-sm text-gray-600">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4">
-              <label for="email" className="leading-7 text-sm text-gray-600">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4">
-              <label for="message" className="leading-7 text-sm text-gray-600">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              ></textarea>
-            </div>
-            <a href="/">
-            <button
-              type="submit"
-              className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-            >
-              submit
-            </button></a>
-            <p className="text-xs text-gray-500 mt-3">
-            i will contact you soon.
-            </p>
-          </form>
-        </div>
-      </section> */}
+      
     </>
   );
 };

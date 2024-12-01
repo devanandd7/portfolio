@@ -91,13 +91,13 @@ const index = () => {
                     <div className="flex mx-auto flex-wrap mb-10 justify-center">
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
                         <a href="https://www.instagram.com/_dev_coder?igsh=MW1xYXZ5dG53MjQ5cA==">
-                          {" "}
+                        
                           <img src="/social.png" alt="" />
                         </a>
                       </div>
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
                         <a href="https://github.com/devanandd7">
-                          {" "}
+                          
                           <img src="/github (2).png" alt="" />
                         </a>
                       </div>
@@ -107,7 +107,7 @@ const index = () => {
                         </a>
                       </div>
                       <div onClick={()=> navigator.clipboard.writeText('devanandutkarsh23@gmail.com')} className="w-10 h-10 border rounded-full m-2 object-scale-down">
-                       <a href=""> <img src="/mail.png" alt="" /></a>
+                       <a > <img src="/mail.png" alt="" /></a>
                       </div>
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down overflow-hidden">
                       <a href="/devanandresume2024.pdf" download="devanandresume2024.pdf"> <img src="/cv.png" alt="" /></a>
@@ -173,10 +173,10 @@ const index = () => {
                 Skill <br /> (Coding & Other)
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                "Bringing ideas to life through code and creativity. Skilled in
+                Bringing ideas to life through code and creativity. Skilled in
                 JavaScript, React, Next.js, and databases like MongoDB and SQL.
                 Beyond coding, I express my creativity through drawing and
-                cooking." ✨
+                cooking. ✨
               </p>
             </div>
             <div className="flex flex-wrap -m-4 text-center">
@@ -316,7 +316,7 @@ const index = () => {
                   newspro
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                  🚀 Excited to share my latest project! 🌐 I’ve built a fully
+                  🚀 Excited to share my latest project! 🌐 I&quot;ve built a fully
                   responsive website using React, JavaScript, news api and
                   Bootstrap. Designed with a focus on seamless user experience
                   across all devices, this project reflects my passion for clean

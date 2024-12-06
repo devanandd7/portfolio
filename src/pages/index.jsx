@@ -38,7 +38,7 @@ const index = () => {
         </div>
       </header>
 
-      <section id="home" className="text-gray-600 body-font h-fit m-0">
+      <section id="home" className=" body-font h-fit m-0">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className=" lg:w-1/2 w-full h-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img
@@ -48,7 +48,7 @@ const index = () => {
             />
           </div>
           <div className="flex flex-col flex-wrap lg:py-3  lg:w-1/2 lg:pl-6 lg:text-left ">
-            <section className="text-white body-font">
+            <section className="text-white  body-font">
               <div className="container px-5 py-4 mx-auto">
                 <div className="xl:w-3/4 lg:w-3/6 w-full mx-auto text-center ">
                   {/* <h1 className="text-5xl text-red-600">Hey ,</h1> */}

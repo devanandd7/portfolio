@@ -38,7 +38,7 @@ const index = () => {
         </div>
       </header>
 
-      <section id="home" className=" body-font h-fit m-0">
+      <section id="home" className="text-gray-600 body-font h-fit m-0">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className=" lg:w-1/2 w-full h-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img

@@ -15,7 +15,7 @@ const index = () => {
             <a className="mr-7 hover:text-white" href="#projects">
               projects
             </a>
-            <a className="mr-7 hover:text-white" href="#Certificates">
+            <a className="mr-7 hover:text-white" to="#Certificates">
               Certificates
             </a>
             <Link className="mr-7 hover:text-white" href="/acadamic_help">

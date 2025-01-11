@@ -17,8 +17,8 @@ const index = () => {
             <a className="mr-7 hover:text-white" href="#Certificates">
               Certificates
             </a>
-            <a className="mr-7 hover:text-white" href="#Mail">
-              Mail
+            <a className="mr-7 hover:text-white" href="/acadamic_help">
+              Acadmic
             </a>
           </nav>
           {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">

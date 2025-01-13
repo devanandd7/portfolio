@@ -1,7 +1,8 @@
 import React from "react";
 
 const acadamic_help = () => {
-  const pdfUrl = "./uploads/pdf.pdf"; // Path to the PDF file in the public folder
+  
+  const pdfUrl = "./uploads/DAA_Lab_experiment_1.pdf"; // Path to the PDF file in the public folder
 
   const handlePreview = () => {
     // Opens the PDF in a new tab
@@ -12,7 +13,7 @@ const acadamic_help = () => {
     // Triggers the download of the PDF
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "./uploads/pdf.pdf"; // Default filename for download
+    link.download = "DAA_Lab_experiment_1.pdf" // Default filename for download
     link.click();
   };
   return (

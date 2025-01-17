@@ -50,7 +50,7 @@ const AcademicHelp = () => {
             projects, and case studies.
             <br />
             <b>100% free of cost</b>, designed to simplify your learning
-            journey!
+            journey!!
           </p>
         </div>
 

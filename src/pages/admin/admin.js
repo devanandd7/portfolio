@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from 'react'
 
-const userinput = () => {
+const Admin = () => {
     const [formData, setFormData] = useState({
         name: "",
         bio: "",
@@ -150,4 +150,4 @@ const userinput = () => {
       );
 }
 
-export default userinput
+export default Admin

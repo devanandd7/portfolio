@@ -5,15 +5,7 @@ const Admin = () => {
     const [formData, setFormData] = useState({
         name: "",
         bio: "",
-        links: ["", "", "", "", ""], // Using an array for links
-        skill_Name: "",
-        skill_Specific_Name: "",
-        project_name: "",
-        project_bio: "",
-        contact_link: "",
-        project_link: "",
-        contact_name: "",
-        contact_email: "",
+      
       });
       const [image, setImage] = useState({
         image1: null,

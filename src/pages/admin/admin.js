@@ -108,6 +108,7 @@ const Admin = () => {
               required
             />
             <input
+            style={{"color":"black"}}
               type="text"
               name="name"
               value={formData.name}
@@ -116,6 +117,7 @@ const Admin = () => {
               required
             />
             <input
+             style={{"color":"black"}}
               type="text"
               name="bio"
               value={formData.bio}

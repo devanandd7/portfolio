@@ -55,15 +55,7 @@ const Admin = () => {
         if (image.image1) {
           data.append("image1", image.image1);
         }
-        if (image.skill_Image) {
-          data.append("skill_Image", image.skill_Image);
-        }
-        if (image.certificates_image) {
-          data.append("certificates_image", image.certificates_image);
-        }
-        if (image.project_Image) {
-          data.append("project_Image", image.project_Image);
-        }
+       
     
     console.log(data);
     

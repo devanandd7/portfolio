@@ -1,21 +1,17 @@
-
 import connectMongo from "./connectMongo";
-import User from "../../../public/models/User";
-import cors from "cors";
-import { promisify } from "util";
+import User from "../../../public/models/User"; // Corrected path for User model
 
-// Configure CORS
+
 const corsOptions = {
-  origin: "*", // Allow all origins (for development). Change this in production.
-  methods: ["GET", "POST"], // Allowed HTTP methods
-  allowedHeaders: ["Content-Type"], // Allowed headers
+  origin: "*", // Update this in production
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
 };
 
-const corsMiddleware = promisify(cors(corsOptions));
 
 export default async function handler(req, res) {
   await connectMongo();
-  await corsMiddleware(req, res); // Apply CORS
+
 
   if (req.method === "POST") {
     try {

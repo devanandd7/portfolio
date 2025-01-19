@@ -38,6 +38,11 @@ const Admin = () => {
       bio: formData.bio,
     };
 
+    if (!data.name || !data.bio) {
+      alert("Name and Bio are required!");
+      return;
+    }
+
     try {
       const response = await fetch("/api/users", {
         method: "POST",
@@ -52,9 +57,11 @@ const Admin = () => {
         fetchUsers();
       } else {
         console.error("Failed to add user");
+        alert("Failed to add user");
       }
     } catch (error) {
       console.error("Error submitting data:", error);
+      alert("Error submitting data");
     }
   };
 
@@ -85,11 +92,15 @@ const Admin = () => {
 
       <h2>Users:</h2>
       <ul>
-        {users.map((user) => (
-          <li key={user._id}>
-            {user.name}, {user.bio}
-          </li>
-        ))}
+        {users.length === 0 ? (
+          <p>No users available</p>
+        ) : (
+          users.map((user) => (
+            <li key={user._id}>
+              {user.name}, {user.bio}
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );

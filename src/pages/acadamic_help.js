@@ -21,18 +21,18 @@ const AcademicHelp = () => {
     }
   };
 
-  const handlePreview = (pdfUrl) => {
-    window.open(pdfUrl, "_blank");
-  };
+  // const handlePreview = (pdfUrl) => {
+  //   window.open(pdfUrl, "_blank");
+  // };
 
-  const handleDownload = (pdfUrl) => {
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = filename + "_" + pdfUrl.split("/").pop();
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownload = (pdfUrl) => {
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = filename + "_" + pdfUrl.split("/").pop();
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <section className="text-gray-600 body-font">
@@ -58,7 +58,7 @@ const AcademicHelp = () => {
           {users.map((data) => (
             <div key={data._id} className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
-                {data.image1.endsWith(".pdf") ? (
+                {/* {data.image1.endsWith(".pdf") ? (
                   <iframe
                     className="h-40 rounded w-full object-cover object-center mb-6 overflow-hidden"
                     src={data.image1}
@@ -67,7 +67,7 @@ const AcademicHelp = () => {
                   />
                 ) : (
                   <p className="h-40 rounded w-full object-cover object-center mb-6 overflow-hidden">Preview not available because of word file , you can download it to preview</p>
-                )}
+                )} */}
 
                 <h3 className="tracking-widest text-yellow-500 text-xs font-medium title-font">
                   Unit -1
@@ -77,7 +77,7 @@ const AcademicHelp = () => {
                 </h2>
                 <p className="leading-relaxed text-base">{data.bio}</p>
 
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                   <button
                     className="inline-flex text-white bg-indigo-500 border-0 py-1 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                     onClick={() => {
@@ -94,7 +94,7 @@ const AcademicHelp = () => {
                   >
                     Preview
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

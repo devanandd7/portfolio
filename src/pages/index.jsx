@@ -1,9 +1,8 @@
-
 import Link from "next/link";
 import React from "react";
-
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 const index = () => {
-
   return (
     <>
       <header className="text-lime-600 body-font">
@@ -15,12 +14,67 @@ const index = () => {
             <a className="mr-7 hover:text-white" href="#projects">
               projects
             </a>
-            <a className="mr-7 hover:text-white" href="#Certificates">
+            {/* <a className="mr-7 hover:text-white" href="#Certificates">
               Certificates
-            </a>
+            </a> */}
             <Link className="mr-7 hover:text-white" href="/acadamic_help">
               Acadmic
             </Link>
+
+
+            <Menu as="div" className="relative inline-block text-left ">
+              <div>
+                <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[#030112] px-3 py-2 text-sm font-semibold text-lime-600 shadow-sm ring-1 ring-inset  hover:text-white">
+                  Certificates
+                  <ChevronDownIcon
+                    aria-hidden="true"
+                    className="-mr-1 size-5 text-gray-400"
+                  />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#Certificates"
+                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+                    >
+                      See Certificates
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="/devanandresume2024.pdf"
+                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+                    >
+                      See Resume
+                    </a>
+                  </MenuItem>
+                  {/* <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+                    >
+                      License
+                    </a>
+                  </MenuItem>
+                  <form action="#" method="POST">
+                    <MenuItem>
+                      <button
+                        type="submit"
+                        className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+                      >
+                        Sign out
+                      </button>
+                    </MenuItem>
+                  </form> */}
+                </div>
+              </MenuItems>
+            </Menu>
           </nav>
           {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             Button
@@ -54,10 +108,10 @@ const index = () => {
                 <div className="xl:w-3/4 lg:w-3/6 w-full mx-auto text-center ">
                   {/* <h1 className="text-5xl text-red-600">Hey ,</h1> */}
                   <h1 className=" text-3xl  lg:text-7xl mt-12 italic md:text-center font-bold">
-                  &ldquo; Devanand Utkarsh &rdquo;
+                    &ldquo; Devanand Utkarsh &rdquo;
                     <br />
                     <p className="text-xl text-center text-lime-300 text-center mt-9 lg:mt-12">
-                    &ldquo;Transforming ideas into digital reality.&rdquo;
+                      &ldquo;Transforming ideas into digital reality.&rdquo;
                     </p>
                   </h1>
                   <p className="leading-relaxed text-lg text-center lg:text-xl mt-10 lg:mt-14">
@@ -71,13 +125,11 @@ const index = () => {
                     <div className="flex mx-auto flex-wrap mb-10 justify-center">
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
                         <a href="https://www.instagram.com/_dev_coder?igsh=MW1xYXZ5dG53MjQ5cA==">
-                        
                           <img src="/social.png" alt="" />
                         </a>
                       </div>
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down">
                         <a href="https://github.com/devanandd7">
-                          
                           <img src="/github (2).png" alt="" />
                         </a>
                       </div>
@@ -86,11 +138,27 @@ const index = () => {
                           <img src="/linkedin.png" alt="" />
                         </a>
                       </div>
-                      <div onClick={()=> navigator.clipboard.writeText('devanandutkarsh23@gmail.com')} className="w-10 h-10 border rounded-full m-2 object-scale-down">
-                       <a > <img src="/mail.png" alt="" /></a>
+                      <div
+                        onClick={() =>
+                          navigator.clipboard.writeText(
+                            "devanandutkarsh23@gmail.com"
+                          )
+                        }
+                        className="w-10 h-10 border rounded-full m-2 object-scale-down"
+                      >
+                        <a>
+                          {" "}
+                          <img src="/mail.png" alt="" />
+                        </a>
                       </div>
                       <div className="w-10 h-10 border rounded-full m-2 object-scale-down overflow-hidden">
-                      <a href="/devanandresume2024.pdf" download="devanandresume2024.pdf"> <img src="/cv.png" alt="" /></a>
+                        <a
+                          href="/devanandresume2024.pdf"
+                          download="devanandresume2024.pdf"
+                        >
+                          {" "}
+                          <img src="/cv.png" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -102,8 +170,6 @@ const index = () => {
       </section>
 
       <div className="flex flex-col">
-       
-
         <section className=" body-font">
           <div className="container px-5 py:12 lg:py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20 ">
@@ -114,7 +180,7 @@ const index = () => {
                 Bringing ideas to life through code and creativity. Skilled in
                 JavaScript, React, Next.js, and databases like MongoDB and SQL.
                 Beyond coding, I express my creativity through drawing and
-                cooking. 
+                cooking.
               </p>
             </div>
             <div className="flex flex-wrap -m-4 text-center">
@@ -204,7 +270,8 @@ const index = () => {
                   My Projects{" "}
                 </h1>
                 <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                &ldquo;Turning visions into reality, one project at a time.&ldquo;
+                  &ldquo;Turning visions into reality, one project at a
+                  time.&ldquo;
                 </p>
               </div>
             </div>
@@ -254,13 +321,13 @@ const index = () => {
                   newspro
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                  Excited to share my latest project!  I&quot;ve built a fully
+                  Excited to share my latest project! I&quot;ve built a fully
                   responsive website using React, JavaScript, news api and
                   Bootstrap. Designed with a focus on seamless user experience
                   across all devices, this project reflects my passion for clean
                   code and modern web development. Check it out and let me know
                   your thoughts! Always eager to connect and learn from the
-                  community. 
+                  community.
                 </p>
                 <a className="text-indigo-500 inline-flex items-center mt-3">
                   Offline
@@ -289,13 +356,13 @@ const index = () => {
                   textcon
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                   Excited to share my latest project!  I&apos;ve built a Text
+                  Excited to share my latest project! I&apos;ve built a Text
                   Manipulation Website using React and JavaScript. This platform
                   allows users to interact with words in various
                   ways—transforming, analyzing, and exploring text effortlessly.
-                  It&apos;s fully responsive and designed to provide an engaging user
-                  experience. Check it out and let me know your thoughts! Your
-                  feedback is always appreciated.
+                  It&apos;s fully responsive and designed to provide an engaging
+                  user experience. Check it out and let me know your thoughts!
+                  Your feedback is always appreciated.
                 </p>
                 <a
                   className="text-indigo-500 inline-flex items-center mt-3 "
@@ -328,13 +395,13 @@ const index = () => {
                   disamonsoon app
                 </h2>
                 <p className="text-base leading-relaxed mt-2 text-gray-500">
-                   Excited to share my latest project!  I &apos;ve developed a
+                  Excited to share my latest project! I &apos;ve developed a
                   weather website using JavaScript and React! Users can easily
                   check real-time temperature, humidity, and wind speed for any
                   location. This project reflects my passion for building
                   functional, user-friendly applications and enhancing everyday
-                  experiences with technology. Check it out, and I &apos; d love to
-                  hear your feedback! 
+                  experiences with technology. Check it out, and I &apos; d love
+                  to hear your feedback!
                 </p>
                 <a
                   className="text-indigo-500 inline-flex items-center mt-3"
@@ -358,8 +425,6 @@ const index = () => {
           </div>
         </section>
       </div>
-
-      
     </>
   );
 };

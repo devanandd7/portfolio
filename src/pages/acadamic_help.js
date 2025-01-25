@@ -55,10 +55,13 @@ const AcademicHelp = () => {
         </div>
 
         <div className="flex flex-wrap -m-4">
-          {users.map((data) => (
-            <div key={data._id} className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                {/* {data.image1.endsWith(".pdf") ? (
+          {users.length === 0 ? (
+            <p className="sm:text-7xl text-3xl title-font mb-2 text-yellow-300">plz wait, file is loading...</p>
+          ) : (
+            users.map((data) => (
+              <div key={data._id} className="xl:w-1/4 md:w-1/2 p-4">
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  {/* {data.image1.endsWith(".pdf") ? (
                   <iframe
                     className="h-40 rounded w-full object-cover object-center mb-6 overflow-hidden"
                     src={data.image1}
@@ -69,16 +72,20 @@ const AcademicHelp = () => {
                   <p className="h-40 rounded w-full object-cover object-center mb-6 overflow-hidden">Preview not available because of word file , you can download it to preview</p>
                 )} */}
 
-                <h3 className="tracking-widest text-yellow-500 text-xs font-medium title-font">
-                  Unit -1
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  {data.name}
-                </h2>
-                <a className="leading-relaxed text-lg text-blue-900" href={data.bio}>Click to See file</a>
-                
+                  <h3 className="tracking-widest text-yellow-500 text-xs font-medium title-font">
+                    Unit -1
+                  </h3>
+                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                    {data.name}
+                  </h2>
+                  <a
+                    className="leading-relaxed text-lg text-blue-900"
+                    href={data.bio}
+                  >
+                    Click to See file
+                  </a>
 
-                {/* <div className="flex justify-center">
+                  {/* <div className="flex justify-center">
                   <button
                     className="inline-flex text-white bg-indigo-500 border-0 py-1 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                     onClick={() => {
@@ -96,9 +103,10 @@ const AcademicHelp = () => {
                     Preview
                   </button>
                 </div> */}
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
     </section>

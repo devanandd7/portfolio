@@ -78,9 +78,9 @@ const Admin = () => {
           placeholder="Name"
           required
         />
-        <input
+        <textarea
           style={{ color: "black" }}
-          type="text"
+          type="textarea"
           name="bio"
           value={formData.bio}
           onChange={handleInputChange}

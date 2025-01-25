@@ -75,7 +75,8 @@ const AcademicHelp = () => {
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                   {data.name}
                 </h2>
-                <p className="leading-relaxed text-base">{data.bio}</p>
+                <p className="leading-relaxed text-base"><a href="{data.bio}"></a></p>
+                
 
                 {/* <div className="flex justify-center">
                   <button

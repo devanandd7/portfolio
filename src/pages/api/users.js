@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       if (!name || !bio) {
         return res.status(400).json({ success: false, error: "Name and bio are required" });
       }
-
+      
       const user = await User.create({ name, bio });
 
       return res.status(201).json({ success: true, data: user });
